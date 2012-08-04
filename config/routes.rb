@@ -1,9 +1,5 @@
 WhitescapeTest2::Application.routes.draw do
-  resources :tags
-
-  resources :presenters
-
-  resources :seminars
+  resources :tags, :presenters, :seminars, :only => [:index, :show]
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
