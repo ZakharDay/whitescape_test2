@@ -38,18 +38,30 @@ end
 
 def add_presenters_to_seminars
   4000.times do |p|
+    # presenter_id = rand(1..50)
+    # presentable_id = rand(1..1000)
+    
+    presenter_id = random(1,50)::int
+    presentable_id = random(1,1000)::int
+    
     Presenting.create(
-      :presenter_id => rand(1..50), 
-      :presentable_id => rand(1..1000), 
+      :presenter_id => presenter_id, 
+      :presentable_id => presentable_id, 
       :presentable_type => 'Seminar')
   end
 end
 
 def add_tags_to_seminars
   4000.times do |t|
+    # tag_id = rand(1..100)
+    # taggable_id = rand(1..1000)
+    
+    tag_id = random(1,100)::int
+    taggable_id = random(1,1000)::int
+    
     Tagging.create(
-      :tag_id => rand(1..100), 
-      :taggable_id => rand(1..1000), 
+      :tag_id => tag_id, 
+      :taggable_id => taggable_id, 
       :taggable_type => 'Seminar')
   end
 end
