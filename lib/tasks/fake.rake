@@ -45,7 +45,7 @@ def add_presenters_to_seminars
     # presentable_id = random(1,1000)::int
     
     presenter_id = Random.new.rand(1..50)
-    presentable_id = Random.new.random(1..1000)
+    presentable_id = Random.new.rand(1..1000)
     
     Presenting.create(
       :presenter_id => presenter_id, 
@@ -62,8 +62,8 @@ def add_tags_to_seminars
     # tag_id = random(1,100)::int
     # taggable_id = random(1,1000)::int
     
-    tag_id = Random.new.random(1..100)
-    taggable_id = Random.new.random(1..1000)
+    tag_id = Random.new.rand(1..100)
+    taggable_id = Random.new.rand(1..1000)
     
     Tagging.create(
       :tag_id => tag_id, 
