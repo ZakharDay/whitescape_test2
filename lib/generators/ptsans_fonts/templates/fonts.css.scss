@@ -1,0 +1,6 @@
+@import 'compass/css3';
+
+@include font-face('PTSans', font-files('PTS55F.ttf', truetype));
+@include font-face('PTSans-Bold', font-files('PTS75F.ttf', truetype), $weight: 'bold');
+@include font-face('PTSans-Caption', font-files('PTC55F.ttf', truetype));
+@include font-face('PTSans-Caption-Bold', font-files('PTC75F.ttf', truetype), $weight: 'bold');

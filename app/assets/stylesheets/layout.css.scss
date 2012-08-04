@@ -1,0 +1,19 @@
+body { 
+	padding-top: 60px;
+	padding-left: 20px;
+}
+
+a.name {
+  display: inline-block;
+  margin: 2px 2px;
+  padding: 2px 5px;
+  @include border-radius(10px);
+  
+  &.tag {
+    background: pink;
+  }
+  
+  &.presenter {
+    background: lightgrey;
+  }
+}

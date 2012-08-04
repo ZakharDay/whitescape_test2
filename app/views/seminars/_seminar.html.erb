@@ -1,0 +1,30 @@
+<div class="page-header">
+  <h2><%= link_to_unless_current seminar.title, seminar %></h2>
+  
+  <p><%= seminar.body %></p>
+  
+  <p>
+    <strong>Presenters:</strong>
+    
+  <% for presenter in seminar.presenters do %>
+    <%= link_to presenter.name, presenter, class: 'presenter name' %>
+  <% end %>
+  </p>
+  
+  <p>
+    <strong>Tags:</strong>
+    <%= render seminar.tags %>
+  </p>
+</div>
+
+<div class="form-actions">
+  <%= link_to t('.back', :default => t("helpers.links.back")),
+              seminars_path, :class => 'btn'  %>
+  <%= link_to t('.edit', :default => t("helpers.links.edit")),
+              edit_seminar_path(seminar), :class => 'btn' %>
+  <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+              seminar_path(seminar),
+              :method => 'delete',
+              :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')),
+              :class => 'btn btn-danger' %>
+</div>

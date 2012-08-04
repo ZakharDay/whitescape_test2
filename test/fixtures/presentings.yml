@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  presenter_id: 1
+  presentable_id: 1
+  presentable_type: MyString
+
+two:
+  presenter_id: 1
+  presentable_id: 1
+  presentable_type: MyString

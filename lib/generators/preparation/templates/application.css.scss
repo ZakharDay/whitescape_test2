@@ -1,0 +1,14 @@
+//= require_self
+
+@import 'compass/reset';
+@import 'compass/css3';
+@import 'mixins.scss';
+
+html, body {
+  @include square;
+  @include font('PTSans', 10px);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @include font($f: 'PTSans-Caption-Bold', $w: bold);
+}

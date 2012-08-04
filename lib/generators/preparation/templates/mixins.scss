@@ -1,0 +1,36 @@
+$realBlack:         #000000;
+
+$black:             lighten( $realBlack, 10% );
+$grey:              lighten( $realBlack, 40% );
+
+$grey80:            lighten( $realBlack, 20% );
+$grey70:            lighten( $realBlack, 30% );
+$grey50:            lighten( $realBlack, 50% );
+$grey40:            lighten( $realBlack, 60% );
+$grey30:            lighten( $realBlack, 70% );
+$grey20:            lighten( $realBlack, 80% );
+$grey10:            lighten( $realBlack, 90% );
+$grey7:             lighten( $realBlack, 93% );
+$grey6:             lighten( $realBlack, 94% );
+$grey5:             lighten( $realBlack, 95% );
+$grey3:             lighten( $realBlack, 97% );
+$grey2:             lighten( $realBlack, 98% );
+$grey1:             lighten( $realBlack, 99% );
+
+$teaserWidth: 320px;
+$backendWidth: 1000px;
+
+$padding-top: 28px;
+$padding-left: 45px;
+$padding-bottom: 28px;
+
+@mixin font($f: 'PTSans-Caption', $s: 1em, $w: normal) {
+  font-family: $f, Helvetica, Arial, sans-serif;
+  font-size: $s;
+  font-weight: $w;
+}
+
+@mixin square($s: 100%) {
+  width: $s;
+  height: $s;
+}
